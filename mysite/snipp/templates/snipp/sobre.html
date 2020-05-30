@@ -7,8 +7,7 @@
 {% block content %}
   <body>
    
-
-    
+       
     <!-- <div class="js-fullheight"> -->
     <div class="hero-wrap js-fullheight">
       <div class="overlay"></div>
@@ -16,157 +15,86 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-6  text-center" data-scrollax=" properties: { translateY: '70%' }">
-            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>About</span></p>
-            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Sobre nosso projeto</h1>
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="{% url 'Inicial' %}">Início</a></span> <span class="mr-2"><a href="{% url 'Colaborador' %}">Seja colaborador</a></span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Sobre nós</h1>
           </div>
         </div>
       </div>
     </div>
     
-    <div class="bg-light">
-      <section class="ftco-section-featured ftco-section-featured-2 ">
-        <div class="container-fluid" data-scrollax-parent="true">
-          <div class="row mt-5 d-flex justify-content-center">
-            <div class="col-md-8 text-center heading-section ">
-              <h2 style = 'color: black;' class="h1">UI/UX, visual, <strong class="px-3">Web designer</strong> with more than 12 years of experience in designing websites and mobile apps.</h2>
-              <p><a href="#" class="btn btn-primary mt-3 py-3 px-5">Get in touch</a></p>
-            </div>
+    <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ">
+            <span class="subheading">Nossa história</span>
+            <h2 class="mb-4">Instituto Carpe Diem</h2>
+            <p>O Carpe Diem foi fundado por Julliana Dellalibera em fevereiro de 2019, porém tem funcionamento como apenas um projeto desde de agosto de 2018, o instituto trabalha com resgates de roedores exóticos.
+              O Núcleo assistencial do Instituto Carpe Diem, está localizado na Mooca. Sua sede é a mesma desde o seu início, o imóvel é de propriedade de Juliana Dellalibera no qual é a atual presidente da instituição.
+              A missão do Instituto é trabalhar no resgate de animais exóticos, o que explica o plano de expansão desejado pela mesma.
+              </p>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <div class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section">
-            <span class="subheading">Team</span>
-            <h2 class="mb-4">Our Team</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+            <span class="subheading">Voluntárias</span>
+            <h2 class="mb-4">Nosso time</h2>
+            <p>- Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 mb-5 ">
             <div class="block-10">
               <div class="person-info mb-2">
-                <span class="name">Jacob Smith</span>
-                <span class="position">Co Designer</span>
+                <span class="name">Aline Sousa</span>
+                <span class="position">Web Developer</span>
               </div>
               <img src="images/person_1.jpg" alt="" class="img-fluid mb-3">
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              <p>- Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto</p>
             </div>
           </div>
           <div class="col-md-4 mb-5 ">
             <div class="block-10">
               <div class="person-info mb-2">
-                <span class="name">Aldin Henderson</span>
+                <span class="name">Erika Paiva</span>
                 <span class="position">Web Developer</span>
               </div>
               <img src="images/person_3.jpg" alt="" class="img-fluid mb-3">
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              <p>- Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto</p>
             </div>
           </div>
           <div class="col-md-4 mb-5 ">
             <div class="block-10">
               <div class="person-info mb-2">
-                <span class="name">Mark Willis</span>
-                <span class="position">Lead Web Developer</span>
+                <span class="name">Julliana Nunes</span>
+                <span class="position">Web Developer</span>
               </div>
               <img src="images/person_2.jpg" alt="" class="img-fluid mb-3">
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              <p>- Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <section class="ftco-section testimony-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section ">
-            <span class="subheading">Customer Says</span>
-            <h2 class="mb-4">Our satisfied customer says</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-          </div>
-        </div>
-        <div class="row ">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">Marketing Manager</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">Interface Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">UI Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">Web Developer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">System Analytics</span>
-                  </div>
-                </div>
-              </div>
+    <div class="bg-light">
+      <section class="ftco-section-featured ftco-section-featured-2 ">
+        <div class="container-fluid" data-scrollax-parent="true">
+          <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-md-8 text-center heading-section ">
+              <h2 class="h1">Nosso sonho é tornar o  <strong class="px-3">mundo</strong> melhor para os animais e para as pessoas.</h2>
+              <p><a href="{% url 'Colaborador' %}" class="btn btn-primary mt-3 py-3 px-5">Seja um colaborador</a></p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+
+    
 
   <!-- loader 
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
