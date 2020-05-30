@@ -13,14 +13,29 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="{% url 'Adocao' %}" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Adoção</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="{% url 'Hamster' %}">Hamster</a>
+                <option class="dropdown-item" href="{% url 'Hamster' %}">Hamster</option>
                 <a class="dropdown-item" href="{% url 'Cachorro' %}">Cachorro</a>
               </div>
           </li>
+
           <li class="nav-item"><a href="{% url 'Contato' %}" class="nav-link">Contato</a></li>
           <li class="nav-item cta"><a href="{% url 'Colaborador' %}" class="nav-link"><span>Seja colaborador</span></a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+
+<script>
+ var main = function () {
+  $('.dropdown').click(function() {
+     $('.dropdown-menu').toggle();
+  });
+};
+
+$(document).ready(main);
+</script>
+
     <!-- END nav -->
