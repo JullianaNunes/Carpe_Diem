@@ -5,49 +5,67 @@
 {% endblock %}
 
 {% block content %}
-<body>
-  <div class="hero-wrap js-fullheight">
-      <div class="overlay"></div>
-      <div id="particles-js"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-          <div class="col-md-6 text-center" data-scrollax=" properties: { translateY: '70%' }">
-            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="{% url 'Hamster' %}">Hamster</a></span><span class="mr-2"><a href="{% url 'Cachorro' %}">Cachorro</a></span></p>
-            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Adoção</h1>
-          </div>
-        </div>
+<div class="hero-wrap js-fullheight">
+  <div class="overlay"></div>
+  <div id="particles-js"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+      <div class="col-md-6 text-center" data-scrollax=" properties: { translateY: '70%' }">
+        <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="{% url 'Hamster' %}">Hamster</a></span><span class="mr-2"><a href="{% url 'Cachorro' %}">Cachorro</a></span></p>
+        <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Adoção</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row no-gutters justify-content-center mb-5 pb-5">
+      <div class="col-md-7 text-center heading-section">
+        <span class="subheading">Adote</span>
+        <h2 class="mb-4">Conheça nossos animais</h2>
+        <p>- Mais algum texto - Mais algum texto - Mais algum texto -</p>
       </div>
     </div>
     
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row no-gutters justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section">
-            <span class="subheading">Adote</span>
-            <h2 class="mb-4">Conheça nossos animais</h2>
-            <p>- Mais algum texto - Mais algum texto - Mais algum texto -</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="blog-entry">
+          <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');"></a>
+          <div class="text p-4 d-block">
+            <div class="meta mb-3">
+              <h3 class="heading">Hamsters</h3>
+            </div>
+             <p>- Texto - Texto - Texto - Texto - Texto - Texto - Texto </p>
           </div>
         </div>
-        <div class="row">
-          <div class="block-3 d-md-flex " data-scrollax-parent="true">
-            <a href="{% url 'Hamster' %}" class="image" style="background-image: url('images/hamster.jpg'); " data-scrollax=" properties: { translateY: '-20%'}">
-            </a>
-            <div class="text">
-              <h4 class="subheading">Hamster</h4>
-              <h2 class="heading"><a href="{% url 'Hamster' %}">- Textinho - Textinho - Textinho - </a></h2>
-              <p>- Mais algum texto - Mais algum texto - Mais algum texto - - Mais algum texto - Mais algum texto - Mais algum texto - - Mais algum texto - Mais algum texto - Mais algum texto - - Mais algum texto - Mais algum texto - Mais algum texto - - Mais algum texto - Mais algum texto - Mais algum texto -</p>
-              <p><a href="{% url 'Hamster' %}" class="btn btn-primary px-4">Veja nossos hamster</a></p>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="blog-entry" data-aos-delay="100">
+          <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');"></a>
+          <div class="text p-4">
+            <div class="meta mb-3">
+              <h3 class="heading">Cachorros</h3>
             </div>
+            <p>- Texto - Texto - Texto - Texto - Texto - Texto - Texto </p>
           </div>
-          <div class="block-3 d-md-flex " data-scrollax-parent="true">
-            <a href="{% url 'Cachorro' %}" class="image image-2 order-2" style="background-image: url('images/work-2.jpg');" data-scrollax=" properties: { translateY: '-20%'}"></a>
-            <div class="text order-1">
-              <h4 class="subheading">Cachorro</h4>
-              <h2 class="heading"><a href="{% url 'Cachorro' %}">- Textinho - Textinho - Textinho -</a></h2>
-              <p>Mais algum texto - Mais algum texto - Mais algum texto - - Mais algum texto - Mais algum texto - Mais algum texto - - Mais algum texto - Mais algum texto - Mais algum texto - - Mais algum texto - Mais algum texto - Mais algum texto - - Mais algum texto - Mais algum texto - Mais algum texto -</p>
-              <p><a href="{% url 'Cachorro' %}" class="btn btn-primary px-4">Veja nossos cachorros</a></p>
+        </div>
+      </div>
+              
+      <div class="col-md-4">
+        <div class="blog-entry" data-aos-delay="200">
+          <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');"></a>
+          <div class="text p-4">
+            <div class="meta mb-3">
+              <h3 class="heading">Outro animal</h3>
             </div>
+            <p>- Texto - Texto - Texto - Texto - Texto - Texto - Texto </p>
           </div>
+        </div>
+      </div>
+  </div>
+</section> 
           <!--<div class="block-3 d-md-flex" data-scrollax-parent="true">
             <a href="portfolio.html" class="image" style="background-image: url('images/work-3.jpg'); " data-scrollax=" properties: { translateY: '-20%'}"></a>
             <div class="text">
@@ -81,12 +99,9 @@
             </div>
           </div>
         </div>-->
+        
       </div>
     </section>
-  
 
-  <!-- loader 
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
--->
   </body>
   {% endblock %}

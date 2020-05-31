@@ -1,31 +1,31 @@
 {% load static %}
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'Inicial' %}">Instituto Carpe Diem</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'Inicial' %}">Instituto Carpe Diem</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menu
+    </button>
 
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="{% url 'Inicial' %}" class="nav-link">Início</a></li>
-          <li class="nav-item"><a href="{% url 'Sobre' %}" class="nav-link">Sobre</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{% url 'Adocao' %}" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Adoção</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <option class="dropdown-item" href="{% url 'Hamster' %}">Hamster</option>
-                <a class="dropdown-item" href="{% url 'Cachorro' %}">Cachorro</a>
-              </div>
-          </li>
-
-          <li class="nav-item"><a href="{% url 'Contato' %}" class="nav-link">Contato</a></li>
-          <li class="nav-item cta"><a href="{% url 'Colaborador' %}" class="nav-link"><span>Seja colaborador</span></a></li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a href="{% url 'Inicial' %}" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="{% url 'Sobre' %}" class="nav-link">Sobre</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{% url 'Adocao' %}" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Adoção</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="{% url 'Hamster' %}">Hamster</a>
+              <a class="dropdown-item" href="{% url 'Cachorro' %}">Cachorro</a>
+            </div>
+        </li>
+        <li class="nav-item"><a href="{% url 'Contato' %}" class="nav-link">Contato</a></li>
+        <li class="nav-item cta"><a href="{% url 'Colaborador' %}" class="nav-link"><span>Seja colaborador</span></a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+{% block js %}
+<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
 <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
 
 <script>
@@ -37,5 +37,4 @@
 
 $(document).ready(main);
 </script>
-
-    <!-- END nav -->
+{% endblock js %} 
