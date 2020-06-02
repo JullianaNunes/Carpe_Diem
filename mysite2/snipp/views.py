@@ -38,6 +38,10 @@ def hamster(request):
 def cachorro(request):
     return render(request, 'snipp/cachorro.html')
 
+def porquinho(request):
+    return render(request, 'snipp/cachorro.html')
+
+
 def service(request):
     return render(request, 'snipp/services.html')
 
