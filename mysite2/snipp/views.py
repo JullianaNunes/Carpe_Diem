@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
+from .models import *
+from .forms import *
 
 
 def inicial(request):
@@ -14,7 +16,18 @@ def sobre(request):
     return render(request, 'snipp/sobre.html')
 
 def colaborador(request):
-    return render(request, 'snipp/colaborador.html')
+    form = Email_save(request.GET)
+    if form.is_valid():
+        form.save()
+        return redirect('snipp/colaborador.html')
+    return render(request, 'snipp/colaborador.html', {'form':form})
+
+def lista_colaborador(request):
+    
+    emails = ModelEmail.objects.all()
+    
+    return render(request, 'snipp/email_list.html', {'emails': emails})
+    import pdb; pdb.set_trace()
 
 def adocao(request):
     return render(request, 'snipp/adocao.html')

@@ -69,6 +69,8 @@
         </div>
 </section> 
 
+<!--Email colaborador-->
+<form method="POST">{%csrf_token %}
 <section class="ftco-section-parallax">
         <div class="parallax-img d-flex align-items-center">
           <div class="container">
@@ -80,8 +82,9 @@
                   <div class="col-md-6">
                     <form action="#" class="subscribe-form">
                       <div class="form-group">
-                        <span class="icon icon-paper-plane"></span>
-                        <input type="text" class="form-control" placeholder="Digite seu e-mail">
+                        {{form.field}}{{form}}
+                        <button type="submit" class="icon icon-paper-plane"></button>
+                       <!-- <input type="text" class="form-control" placeholder="Digite seu e-mail">-->
                       </div>
                     </form>
                   </div>
@@ -91,6 +94,9 @@
           </div>
         </div>
 </section>
+</form>>
+
+<!--Depoimento -->
 
 <section class="ftco-section bg-light">
           <div class="container">
