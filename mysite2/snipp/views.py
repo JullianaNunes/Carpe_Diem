@@ -10,7 +10,18 @@ def teste(request):
     return render(request, 'snipp/base.html')
 
 def contato(request):
-    return render(request, 'snipp/contato.html')
+    form = Contato_save(request.GET)
+    if form.is_valid():
+        form.save()
+       # return redirect('Contato')
+    return render(request, 'snipp/contato.html', {'form':form})
+ 
+def lista_contato(request):
+    
+    info_contatos = ModelEmail.objects.all()
+    
+    return render(request, 'snipp/email_list.html', {'emails': emails})
+    #import pdb; pdb.set_trace()
 
 def sobre(request):
     return render(request, 'snipp/sobre.html')
@@ -27,7 +38,7 @@ def lista_colaborador(request):
     emails = ModelEmail.objects.all()
     
     return render(request, 'snipp/email_list.html', {'emails': emails})
-    import pdb; pdb.set_trace()
+    #import pdb; pdb.set_trace()
 
 def adocao(request):
     return render(request, 'snipp/adocao.html')
@@ -39,8 +50,7 @@ def cachorro(request):
     return render(request, 'snipp/cachorro.html')
 
 def porquinho(request):
-    return render(request, 'snipp/cachorro.html')
-
+    return render(request, 'snipp/porquinho.html')
 
 def service(request):
     return render(request, 'snipp/services.html')
