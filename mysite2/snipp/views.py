@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render
 from .models import *
 from .forms import *
+import email
 
 
 def inicial(request):
@@ -25,8 +26,7 @@ def colaborador(request):
 def lista_colaborador(request):
     
     emails = ModelEmail.objects.all()
-    
-    return render(request, 'snipp/email_list.html', {'emails': emails})
+    return render(request, 'snipp/email_list.html', {'emails': email})
     import pdb; pdb.set_trace()
 
 def adocao(request):
