@@ -4,7 +4,21 @@
 <title>Sobre</title>
 {% endblock %}
 
+{% load static %}
 {% block content %}
+
+<style>
+  .img-fluid {
+  max-width: 40%;
+  height: auto;
+}
+
+img {
+  border-radius: 50%;
+}
+
+</style>
+
 <div class="hero-wrap js-fullheight">
   <div class="overlay"></div>
   <div id="particles-js"></div>
@@ -37,43 +51,43 @@
   <div class="container">
     <div class="row justify-content-center mb-5 pb-5">
       <div class="col-md-7 text-center heading-section">
-        <span class="subheading">Voluntárias</span>
-        <h2 class="mb-4">Nosso time</h2>
-        <p>- Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto</p>
+        <span class="subheading">Nosso time de desenvolvedoras</span>
+        <h2 class="mb-4">Voluntárias</h2>
+        <p> Conheça as vonluntárias que criaram este site e nossas redes sociais</p>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="col-md-4 mb-5 ">
         <div class="block-10">
+          <img src="{% static 'images/aline.jpeg' %}" alt="" class="img-fluid mb-3"/>
           <div class="person-info mb-2">
             <span class="name">Aline Sousa</span>
             <span class="position">Web Developer</span>
           </div>
-          <img src="images/person_1.jpg" alt="" class="img-fluid mb-3">
-          <p>- Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto</p>
+          <p>28 anos | Universidade Carlos Drummond de Andrade | 7º semestre | Ciência da Computação</p>
         </div>
       </div>
-      
+  
       <div class="col-md-4 mb-5 ">
         <div class="block-10">
+          <img src="{% static 'images/erika.jpeg' %}" alt="" class="img-fluid mb-3"/>
           <div class="person-info mb-2">
             <span class="name">Erika Paiva</span>
             <span class="position">Web Developer</span>
           </div>
-          <img src="images/person_3.jpg" alt="" class="img-fluid mb-3">
-          <p>- Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto</p>
+          <p>20 anos | Universidade Carlos Drummond de Andrade | 7º semestre | Ciência da Computação</p>
         </div>
       </div>
-         
+
       <div class="col-md-4 mb-5 ">
         <div class="block-10">
+          <img src="{% static 'images/julliana.png' %}" alt="" class="img-fluid mb-3"/>
           <div class="person-info mb-2">
             <span class="name">Julliana Nunes</span>
             <span class="position">Web Developer</span>
           </div>
-          <img src="images/person_2.jpg" alt="" class="img-fluid mb-3">
-          <p>- Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto - Texto</p>
+          <p> 20 anos | Universidade Carlos Drummond de Andrade | 7º semestre | Ciência da Computação  </p>
         </div>
       </div>
     </div>

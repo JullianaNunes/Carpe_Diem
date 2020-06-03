@@ -12,7 +12,7 @@ def teste(request):
 
 def contato(request):
     return render(request, 'snipp/contato.html')
-
+ 
 def sobre(request):
     return render(request, 'snipp/sobre.html')
 
@@ -26,8 +26,9 @@ def colaborador(request):
 def lista_colaborador(request):
     
     emails = ModelEmail.objects.all()
-    return render(request, 'snipp/email_list.html', {'emails': email})
-    import pdb; pdb.set_trace()
+    
+    return render(request, 'snipp/email_list.html', {'emails': emails})
+    #import pdb; pdb.set_trace()
 
 def adocao(request):
     return render(request, 'snipp/adocao.html')
@@ -37,6 +38,9 @@ def hamster(request):
 
 def cachorro(request):
     return render(request, 'snipp/cachorro.html')
+
+def porquinho(request):
+    return render(request, 'snipp/porquinho.html')
 
 def service(request):
     return render(request, 'snipp/services.html')
