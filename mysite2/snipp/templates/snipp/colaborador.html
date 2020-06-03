@@ -70,7 +70,7 @@
 </section> 
 
 <!--Email colaborador-->
-<form method="POST">{%csrf_token %}
+<form method="POST" action = "{% url 'Emails' %}">{%csrf_token %}
 <section class="ftco-section-parallax">
         <div class="parallax-img d-flex align-items-center">
           <div class="container">
@@ -83,7 +83,7 @@
                     <form action="#" class="subscribe-form">
                       <div class="form-group">
                         {{form.field}}{{form}}
-                        <button type="submit" class="save btn btn-primary py-3 px-5t" value="Enviar">Enviar</button>
+                        <br><br><button type="submit" class="save btn btn-primary py-3 px-5t" value="Enviar">Enviar</button>
                       </div>
                     </form>
                   </div>
@@ -110,11 +110,9 @@
                           <div class="testimony-wrap p-4 pb-5">
                               <div class="text p-4 d-block">
                                   <div class="meta mb-3">
-                                      <div class="user-img mb-4" style="background-image: url(images/porquinho.jpeg)">
-                                         <!-- <span class="quote d-flex align-items-center justify-content-center">
-                                          <i class="icon-quote-left"></i>-->
+                                        <span class="quote d-flex align-items-center">
+                                          <i class="icon-quote-left"></i>
                                           </span>
-                                      </div>
                                       <div class="text">
                                           <p class="mb-5">Adotamos a sofia e ela vai ser muito bem cuidada, agradeço ao instituto essa experiencia esta sendo incrivel!!</p>
                                           <p class="name">Assinado</p>
@@ -128,16 +126,14 @@
                           <div class="testimony-wrap p-4 pb-5">
                               <div class="text p-4 d-block">
                                   <div class="meta mb-3">
-                                      <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                                          <span class="quote d-flex align-items-center justify-content-center">
-                                              <i class="icon-quote-left"></i>
-                                          </span>
-                                      </div>
-                                      <div class="text">
-                                        <p class="mb-5">Chico pediu pra avisar as titias do instituto que esta muito feliz. </p>
-                                        <p class="name">Assinado</p>
-                                        <span class="position">Larissa Parreira</span>
-                                      </div>    
+                                    <span class="quote d-flex align-items-center ">
+                                      <i class="icon-quote-left"></i>
+                                    </span>
+                                    <div class="text">
+                                      <p class="mb-5">Chico pediu pra avisar as titias do instituto que esta muito feliz. </p>
+                                      <br><br><p class="name">Assinado</p>
+                                      <span class="position">Larissa Parreira</span>
+                                    </div>    
                                   </div>
                               </div>
                           </div>
@@ -146,11 +142,9 @@
                           <div class="testimony-wrap p-4 pb-5">
                               <div class="text p-4 d-block">
                                   <div class="meta mb-3">
-                                      <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                                          <span class="quote d-flex align-items-center justify-content-center">
+                                          <span class="quote d-flex align-items-centerr">
                                               <i class="icon-quote-left"></i>
                                           </span>
-                                      </div>
                                       <div class="text">
                                         <p class="mb-5">Adotei e nao me arrependo! estou apaixonada e ele até ganhou plaquinha de identificação! tenham certeza completou nossa alegria.</p>
                                         <p class="name">Assinado</p>

@@ -19,7 +19,7 @@ def sobre(request):
     return render(request, 'snipp/sobre.html')
 
 def colaborador(request):
-    form = Email_save(request.GET)
+    form = Email_save(request.POST)
     if form.is_valid():
         form.save()
         return redirect('snipp/colaborador.html')
