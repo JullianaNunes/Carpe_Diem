@@ -4,7 +4,22 @@
 <title>Cachorros</title>
 {% endblock %}
 
+{% load static %}
 {% block content %}
+<style>
+  .img-fluid {
+  max-width: 20%;
+  height: auto;
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+</style>
+
 <div class="hero-wrap js-fullheight">
   <div class="overlay"></div>
   <div id="particles-js"></div>
@@ -15,6 +30,35 @@
         <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Cachorros</h1>
       </div>
      </div>
+  </div>
+</div>
+
+<section class="ftco-section testimony-section bg-light">
+  <div class="container" >
+    <img src="{% static 'images/cachorro2.jpeg' %}" alt="" class="img-fluid mb-3"/>
+    <div class="row justify-content-center mb-5 pb-5"> 
+      <div class="col-md-7 text-center heading-section ">
+        <span class="subheading">Cachorros</span>
+        <h2 class="mb-4">Origem</h2>
+        <p>Os cães surgiram pela primeira vez há cerca de 15 mil anos, muito antes do advento da agricultura, e representam o mais antigo animal doméstico que conhecemos. Eles emergiram de lobos antigos, 
+          mas os cientistas não estão inteiramente certos se este evento de domesticação aconteceu na Europa ou na Ásia
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 text-center heading-section">
+        <span class="subheading">Cachorros</span>
+        <h2 class="mb-4">Curiosidades</h2>
+        <p> >Você sabia que os cachorros se apaixonam?
+          O mesmo hormônio (oxitocina) que faz seu cachorro te amar loucamente, também o faz se apaixonar.  Ele é o hormônio do amor, responsável também pela interação do cão com o mundo ao seu redor:  o dono, familiares e outros cães.</p>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

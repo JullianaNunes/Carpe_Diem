@@ -4,7 +4,21 @@
 <title>Hamster</title>
 {% endblock %}
 
+{% load static %}
 {% block content %}
+<style>
+  .img-fluid {
+  max-width: 20%;
+  height: auto;
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+</style>
 <div class="hero-wrap js-fullheight">
   <div class="overlay"></div>
   <div id="particles-js"></div>
@@ -13,6 +27,36 @@
       <div class="col-md-6 text-center" data-scrollax=" properties: { translateY: '70%' }">
         <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="{% url 'Inicial' %}">Início</a></span> <span class="mr-2"><a href="{% url 'Adocao' %}">Adoção</a></span></p>
         <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Hamster</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="ftco-section testimony-section bg-light">
+  <div class="container">
+    <img src="{% static 'images/hamster2.jpeg' %}" alt="" class="img-fluid mb-3"/>
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 text-center heading-section ">
+        <span class="subheading">Hamster</span>
+        <h2 class="mb-4">Origem</h2>
+        <p>A palavra hamster tem sua origem na palavra alemã “hamstern” que significa “acumular” ou “armazenar”, uma referência às suas bochechas, eles fazem parte da subfamília Cricetinae.
+          Existem diversas espécies de hamsters espalhadas por todo o mundo e muitos deles habitam as regiões semi-desertas onde vivem em tocas.Estas tocas são formadas por vários túneis e câmaras que são utilizadas para armazenar comida ou dormir. Os hamsters são animais noturnos, que dormem durante o dia quente e ficam acordados à noite quando está mais frio. Eles enxergam muito mal, mas têm o olfato apurado e uma excelente audição. A maioria das espécies de hamsters têm as bochechas dilatáveis, isto é, 
+          bochechas que aumentam de tamanho, onde eles podem carregar comida e forragem para ser guardada em sua toca
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 text-center heading-section">
+        <span class="subheading">Hamster</span>
+        <h2 class="mb-4">Curiosidades</h2>
+        <p> Você sabia que os Hamsters aprendem seu próprio nome ?
+          Não. Você não entendeu errado! Este pequeno roedor é muito inteligente, e pode aprender seu próprio nome. Especialistas dizem que basta que ele ouça o apelido com bastante frequência. Se você quiser estimular, fique repetindo o nome de seu amigo próximo a ele. 
+          Em breve, o ratinho vai aprender e começar a atender quando for chamado.</p>
       </div>
     </div>
   </div>

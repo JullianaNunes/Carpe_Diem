@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .models import *
 from .forms import *
+import email
 
 
 def inicial(request):
@@ -13,7 +14,7 @@ def teste(request):
 
 def contato(request):
     return render(request, 'snipp/contato.html')
-
+    
 def sobre(request):
     return render(request, 'snipp/sobre.html')
 
