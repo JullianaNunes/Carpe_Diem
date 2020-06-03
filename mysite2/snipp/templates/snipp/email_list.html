@@ -1,26 +1,47 @@
+{% extends 'snipp/base.html' %}
 
 {% block title %}
-<title>Emails</title>
+<title>Lista de emails</title>
 {% endblock %}
 
 {% block content %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <ul>
-        {% for email in emails %}
-            <a >
-                <li> {{ email.email }}</li>
-            </a>
-        {% endfor %}
-    </ul>
+<div class="hero-wrap js-fullheight">
+    <div class="overlay"></div>
+    <div id="particles-js"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+        <div class="col-md-6 text-center" data-scrollax=" properties: { translateY: '70%' }">
+          <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="{% url 'Inicial' %}">Início</a></span></p>
+          <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Contato</h1>
+        </div>
+      </div>
+    </div>
+  </div>
 
-</body>
-</html>
+  <section class="ftco-section testimony-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-7 text-center heading-section ">
+          <h2 class="mb-4">Lista de e-mails</h2>
+        <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">E-mail</th>
+            <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for email in emails %}
+            <tr>
+            <td>{{ email.email }}</td>
+            <td></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
 {% endblock %}
